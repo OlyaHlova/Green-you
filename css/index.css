@@ -1,0 +1,178 @@
+body{
+    max-width: 958px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    }
+
+header {
+    background-color: #347a53;
+    max-width: 958px;
+}
+
+nav{
+    background-color: #f8f8f8;
+    }
+
+nav ul {
+    display: block;
+}
+
+nav li {
+    display:inline;
+    list-style: none;
+    font-size: 20px;
+	font-weight: none;
+	text-decoration: none;
+	padding: 0 30px;
+	color: gray;
+	text-shadow: 0 1px 0 white;
+}
+
+input{
+    display: inline;
+}
+
+header img{
+    width: 958px;
+    margin-top: -1px ;
+    float: 0 auto;
+}
+
+header h1 {
+    font-size:50px;
+    font-family:'Courier New', Courier, monospace;
+    color: #dfedd6;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+header h2 {
+    font-size:18px;
+    font-family:'Courier New', Courier, monospace;
+    color:#dfedd6;
+}
+
+#category{
+    background-color: #4c7a34;
+}
+
+#category img{
+    height: 100px;
+}
+
+#category h1 {
+    color:white;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size:18px;
+}
+
+section{
+    color:black;
+}
+
+#name {
+    background-color:#d6d6d6;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#name h1 {
+    margin: auto ;
+}
+
+#name1 {
+    background-color:#c5d2e0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#name1 p {
+    margin: 0 0 0 140px;
+    font-size:20px;
+    color:#021f54;
+}
+
+h1 {
+    color:#021f54;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size:22px;
+}
+
+h2 {
+    color:#021f54;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+}
+
+h3 {
+    color:#4169E1;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+
+p {
+    color:black;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.search{
+    color: red;
+}
+
+a {
+    color:#1E90FF;
+    text-decoration:none;
+}
+
+a:visited {
+    color:#B0C4DE;
+}
+
+a:hover {
+    color:#87CEFA;
+    text-decoration:underline;
+}
+
+table {
+    width: 900px;
+    color:black;
+    display: flex;
+    justify-content: flex-start;
+}
+
+table img {
+    width: 160px;
+    height: 120px;
+}
+
+footer {
+    background-color:#ebebeb;
+    display: flex;
+    justify-content: center;
+}
+
+footer table {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+footer table img {
+    height: 70px;
+    width: 70px;
+    display: block;
+    margin: 0 10px 0 10px;
+    }
+
+footer table td {
+    background-color: none;
+    border: 0 solid black;
+    min-width: 150px;
+    margin: 0 auto;
+    color: grey;
+}
