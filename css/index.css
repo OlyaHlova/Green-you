@@ -1,57 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Arsenal|Gloria+Hallelujah&display=swap');
+
+:root {
+    --accent-color: #81bbbd;
+    --main-color: black;
+    font-family: 'Arsenal', sans-serif;
+    scroll-behavior: smooth;
+}
+
 body{
-    max-width: 958px;
-    margin: 0 auto;
+    max-width: 980px;
+    margin: auto;
     background-color: whitesmoke;
     }
 
 header {
-    background-color: #347a53;
-    max-width: 958px;
+    background-color: whitesmoke;
 }
 
-nav{
-    background-color: #f8f8f8;
+header nav .menu {
+    font-size:16px;
+    font-family: 'Gloria Hallelujah', cursive;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style-type: none;
     }
 
-nav ul {
-    display: block;
+header nav .menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-color);
+    border: 1px solid transparent;
+    padding: 5px;
 }
 
-nav li {
-    display:inline;
-    list-style: none;
-    font-size: 20px;
-	font-weight: none;
-	text-decoration: none;
-	padding: 0 30px;
-	color: gray;
-	text-shadow: 0 1px 0 white;
+header nav .menu a:hover {
+    border: 1px solid var(--accent-color);
 }
 
-input{
-    display: inline;
+@media (min-width: 550px) {
+    header nav {
+        display: flex;
+        align-items: center;
+    }
+
+    header nav .menu {
+        flex: 1;
+    }
 }
 
-header img{
-    width: 958px;
-    margin-top: -1px ;
-    float: 0 auto;
+header .banner {
+    background-image: url(../img/green.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header h1 .greenname {
+    font-size: 5rem;
+    color: rgb(113, 248, 3);
+    text-shadow: black 0 0 10px;
 }
 
 header h1 {
     font-size:50px;
-    font-family:'Courier New', Courier, monospace;
-    color: #dfedd6;
+    font-family: 'Gloria Hallelujah', cursive;
+    color: rgb(6, 175, 56);
+    text-shadow: black 0 0 7px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
 }
 
-header h2 {
-    font-size:18px;
-    font-family:'Courier New', Courier, monospace;
-    color:#dfedd6;
+header .banner a:hover {
+    text-decoration: none;
+    text-transform: uppercase;
 }
+
+header p {
+    font-size:26px;
+    font-family: 'Gloria Hallelujah', cursive;
+    color: black;
+    text-shadow: white 0 0 4px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+} 
 
 #category{
     background-color: #4c7a34;
@@ -63,7 +101,6 @@ header h2 {
 
 #category h1 {
     color:white;
-    font-family: Arial, Verdana, Helvetica, sans-serif;
     font-size:18px;
 }
 
@@ -71,25 +108,25 @@ section{
     color:black;
 }
 
-#name {
+#events {
     background-color:#d6d6d6;
     margin: auto;
     display: flex;
     justify-content: center;
 }
 
-#name h1 {
+#events h1 {
     margin: auto ;
 }
 
-#name1 {
+#message {
     background-color:#c5d2e0;
     margin-top: 20px;
     display: flex;
     justify-content: center;
 }
 
-#name1 p {
+#message p {
     margin: 0 0 0 140px;
     font-size:20px;
     color:#021f54;
@@ -97,26 +134,22 @@ section{
 
 h1 {
     color:#021f54;
-    font-family: Arial, Verdana, Helvetica, sans-serif;
     font-size:22px;
 }
 
 h2 {
     color:#021f54;
-    font-family: Arial, Verdana, Helvetica, sans-serif;
 }
 
 h3 {
     color:#4169E1;
-    font-family: Arial, Verdana, Helvetica, sans-serif;
     font-style: italic;
 }
 
 
 p {
     color:black;
-    font-family: Arial, Verdana, Helvetica, sans-serif;
-    font-style: italic;
+    
 }
 
 .search{
