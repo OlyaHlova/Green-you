@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Comfortaa|Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Montserrat&display=swap');
 
 :root {
     --accent-color: #61892f;
     --main-color: #1F6521;
-    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'Gothic A1', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -103,11 +103,12 @@ header .banner a:hover {
 }
 
 header p {
-    font-size:26px;
+    font-size:1.1rem;
     font-family: 'Comfortaa', cursive;
     color: white;
     text-shadow: black 0 0 4px;
     margin: 0 auto;
+    padding-top: 10px;
     display: flex;
     justify-content: center;
 }
@@ -116,7 +117,7 @@ header p {
     color: #7C00CF;
 } */
 
-@media (min-width: 980px) {
+@media (min-width: 680px) {
 #category{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -125,7 +126,7 @@ header p {
    }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 300px) {
     #caregory{
         display: grid;
         grid-template-columns: 1fr;
@@ -155,7 +156,7 @@ header p {
 }
 
 #category img{
-    height: 150px;
+    height: 130px;
     margin: 0 auto;
     padding-top: 5px;
     display: flex;
@@ -165,20 +166,103 @@ header p {
 
 #category h1 {
     color: white;
-    font-size:1.4rem;
+    font-size:1.1rem;
 }
 
-/* #quote {
-    display: grid;
-    grid-template-columns: 5% 90% 5%;
-} */
+.countdown {
+    display: flex;    
+    grid-auto-columns: inherit;
+    margin-bottom: 10px;
+}
 
-/* #quote p{
-    grid-column-start: 2;
-    background-color:#C6F5BC;
-    min-height: 60px;
+.countdown-title {
+    color: var(--main-color);
+    font-weight: 100;
+    font-size: 1.9rem;
+    margin: 20px 0px 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .countdown {
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .countdown-number {
+    padding: 10px;
+    border-radius: 3px;
+    background: var(--accent-color);
+    display: inline-block;
+  }
+  
+  .countdown-time {
+    padding: 15px;
+    border-radius: 3px;
+    background: var(--main-color);
+    display: inline-block;
+  }
+  
+  .countdown-text {
+    display: block;
+    padding-top: 5px;
     font-size: 1.2rem;
-} */
+  }
+ 
+  @media (min-width: 300px) {
+    #countdown {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0px;
+    row-gap: 0px;
+    }
+  }
+
+@media (min-width: 680px) {
+    #countdown {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 0px;
+    row-gap: 0px;
+    }
+}
+
+/* 
+  @media (min-width: 800px) {
+    #countdown {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 0px;
+    row-gap: 0px;
+    }
+  } */
+
+  .relative {
+    margin: 30px 0;
+    display: block;
+    list-style: none;
+    font-size: .95em;
+    clear: both;
+    padding: 30px;
+    border: 1px solid #61892f;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: border-box;
+    line-height: 140%;
+    color: #000;
+    text-rendering: geometricPrecision;
+    width:100%;
+}
+
+.relative a {
+    color: #61892f;
+    text-decoration: none;
+}
 
 section{
     color:black;
@@ -186,6 +270,7 @@ section{
 
 #eventsName {
     background-color: var(--accent-color);
+    margin-top: 10px;
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
@@ -218,6 +303,7 @@ article.events-block img {
 
 h2.contact {
     color: white;
+    font-size: 1.4rem;
     background-color: var(--accent-color);
     display: flex;
     justify-content: center;
@@ -228,12 +314,13 @@ h2.contact {
 }
 
 input[type="text"], [type="email"] {
-    width: 90%;
+    /* width: 95%; */
     padding: 0 auto;
 }
 
 textarea {
-    width: 90%;
+    
+    /* width: 95%; */
     height: 90px;
 }
 
@@ -246,31 +333,32 @@ input, textarea {
      border: 1px solid var(--accent-color);
      padding: 2px;
      color: #4b4b4b;
-     font-family: 'Didact Gothic', sans-serif;
+     font-family: 'Gothic A1', sans-serif;
 }
 
-#message {
-    width: ;
+#message form{
+   
     display: grid;
-    grid-area: auto;
+    grid-auto-columns: inherit;
 }
 
 #message form input[type="submit"] {
     border: none;
     cursor: pointer;
     color: white;
+    font-size: 1rem;
     background-color: var(--accent-color);
-    padding: 5px 36px 8px 36px;
+    padding: 8px 86px 8px 86px;
+    margin: 2px auto;
     border-bottom: 1px solid rgba(0, 0, 0, 0.4);
     border-top: 1px solid rgba(255, 255, 255, 0.6);
-    display: flex;
-    justify-content: center;
+    /* max-width: 150px; */
 }
 
 input[type="submit"]:hover {
     color: #fff;
     border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-    background-color: var(--accent-color);
+    background-color: var(--main-color);
 }
 
 input[type="submit"]:active {
@@ -318,29 +406,35 @@ footer {
 
 #foo p {
     color: black;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
 }
 
 #foo img {
-    height: 70px;
-    width: 70px;
-    margin-top: 5px;
+    height: 40px;
+    width: 40px;
+    margin: 0 auto;
+    padding-top: 5px;
     display: flex;
     justify-content: center;
-    padding: 0 auto;
 }
 
-@media (min-width: 640px) {
+
+@media (min-width: 300px) {
     #foo {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 80px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 60px;
     }
 }
 
-@media (min-width: 980px) {
+@media (min-width: 500px) {
     #foo {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 3fr;
     }
 }
+
+
 
