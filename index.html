@@ -13,7 +13,7 @@
 
         <header>
             <nav>
-                <div class="logo">Green</div>
+                <div class="logo"><img src="img/logo.png"></div>
                  <ul class="menu" >
                     <li><a href="#home">Домівка</a></li>
                     <li><a href="events.html">Події</a</li>
@@ -26,8 +26,12 @@
                 </form>
             </nav>
             <div class="banner">
-                <a href="about.html"><h1><span class="greenname">GREEN</span>`you Землю</h1>
-                <p>еко-ініціатива</p></a>
+                <div class="green-back">
+                    <a href="about.html">
+                        <h1><span class="greenname">GREEN</span>`you Землю</h1>
+                        <p>еко-ініціатива</p>
+                    </a>
+                </div>
             </div>
         </header>
         <main>
@@ -103,23 +107,23 @@
                      </article>
                 </div>
 
-                <div id="message">
-                    <h2 class="contact">Напишіть нам...</h2>
+                <h2 class="contact">Напишіть нам...</h2>
 
-                    <form id="contactform" method="POST" action="https://formspree.io/olyastef@gmail.com">
-                        <p class="contact"><label>Ім'я
-                        <br>
-                            <input type="text" placeholder="Ім'я" name="mame">
-                        </label></p>
+                <div id="message">
+                   <form id="contactform" method="POST" action="https://formspree.io/olyastef@gmail.com">
+                        
+                        <p class="contact"><label for="name">Ім'я</label></p>
+                            <input type="text" placeholder="Ім'я" id="name" name="mame" required="">
+                        
                         <p class="contact"><label for="email">Електронна адреса</label></p>
-                            <input type="email"  placeholder="Email Address" id="email" name="email">
+                            <input type="email"  placeholder="Email Address" id="email" name="email" required="">
 
                         <p class="contact"><label for="subject">Тема</label></p>
-                            <input type="text" placeholder="subject" id="subject" name="subject"  required="" tabindex="2">
+                            <input type="text" placeholder="Subject" id="subject" name="subject"  required="" tabindex="2">
 
-                        <p class="contact"><label for="comment">Текст повідомлення
-                            <textarea placeholder="Ваше повідомлення" name="comment" id="comment" tabindex="4"></textarea> <br>
-                         </label></p>
+                        <p class="contact"><label for="comment">Текст повідомлення</label></p>
+                            <textarea placeholder="Ваше повідомлення" name="comment" id="comment" required="" tabindex="4"></textarea>
+                         
                         <input type="submit" name="submit" id="submit" tabindex="5" value="Відправити">
                     </form>
                 </div>
