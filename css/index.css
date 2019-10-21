@@ -10,7 +10,7 @@
 body{
     max-width: 980px;
     margin: auto;
-    background-color: whitesmoke;
+    background: linear-gradient( #61892f, #eee 25%, #eee 97%, #333 75%);
 }
 
 header {
@@ -30,7 +30,7 @@ header nav .logo img {
 }
 
 header nav .menu {
-    font-size:20px;
+    font-size:18px;
     /* font-family: 'Didact Gothic', sans-serif; */
     display: flex;
     justify-content: space-around;
@@ -50,7 +50,7 @@ header nav .menu a:hover {
     border: 1px solid #079376;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 650px) {
     header nav {
         display: flex;
         align-items: center;
@@ -77,7 +77,7 @@ header .banner {
 }
 
 header .banner .green-back {
-    background: var(--accent-color); 
+    background: var(--accent-color);
     padding:20px;
 }
 
@@ -170,7 +170,7 @@ header p {
 }
 
 .countdown {
-    display: flex;    
+    display: flex;
     grid-auto-columns: inherit;
     margin-bottom: 10px;
 }
@@ -183,7 +183,7 @@ header p {
     display: flex;
     justify-content: center;
   }
-  
+
   .countdown {
     font-family: sans-serif;
     color: #fff;
@@ -192,33 +192,33 @@ header p {
     text-align: center;
     font-size: 2rem;
   }
-  
+
   .countdown-number {
     padding: 10px;
     border-radius: 3px;
     background: var(--accent-color);
     display: inline-block;
   }
-  
+
   .countdown-time {
     padding: 15px;
     border-radius: 3px;
     background: var(--main-color);
     display: inline-block;
   }
-  
+
   .countdown-text {
     display: block;
     padding-top: 5px;
     font-size: 1.2rem;
   }
- 
+
   @media (min-width: 300px) {
     #countdown {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 0px;
-    row-gap: 0px;
+    column-gap: 10px;
+    row-gap: 10px;
     }
   }
 
@@ -226,20 +226,11 @@ header p {
     #countdown {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    column-gap: 0px;
-    row-gap: 0px;
+    column-gap: 10px;
+    row-gap: 10px;
     }
 }
 
-/* 
-  @media (min-width: 800px) {
-    #countdown {
-    display: grid;
-    grid-template-columns: 1fr;
-    column-gap: 0px;
-    row-gap: 0px;
-    }
-  } */
 
   .relative {
     margin: 30px 0;
@@ -251,10 +242,10 @@ header p {
     border: 1px solid #61892f;
     outline: 0;
     vertical-align: baseline;
-    background: transparent;
+    background-color: #333;
     box-sizing: border-box;
     line-height: 140%;
-    color: #000;
+    color: #fff;
     text-rendering: geometricPrecision;
     width:100%;
 }
@@ -263,6 +254,10 @@ header p {
     color: #61892f;
     text-decoration: none;
 }
+.relative h3 {
+    background-color: var(--accent-color);
+    color: white;
+}
 
 section{
     color:black;
@@ -270,14 +265,10 @@ section{
 
 #eventsName {
     background-color: var(--accent-color);
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 30px 30px 10px 30px;
+    height: 45px;
     display: flex;
     justify-content: center;
-}
-
-#eventsName h1 {
-    margin: auto ;
 }
 
 article.events-block img {
@@ -309,6 +300,14 @@ h2.contact {
     justify-content: center;
 }
 
+#message {
+    background-color: #333;
+}
+
+#message form {
+    padding: 0 30px 0 30px;
+}
+
 #contact {
     margin-bottom: 0px;
 }
@@ -319,7 +318,7 @@ input[type="text"], [type="email"] {
 }
 
 textarea {
-    
+
     /* width: 95%; */
     height: 90px;
 }
@@ -337,7 +336,7 @@ input, textarea {
 }
 
 #message form{
-   
+
     display: grid;
     grid-auto-columns: inherit;
 }
@@ -369,15 +368,16 @@ h1 {
     color: white;
     font-size:1.3rem;
 }
-/* 
+
 h2 {
-    color:#021f54;
+     color: white;
+    font-size:1.3rem;
 }
 
 h3 {
-    color:#4169E1;
-    font-style: italic;
-} */
+    color:black;
+    font-weight: normal;
+}
 
 p {
     color:black;
@@ -421,7 +421,7 @@ footer {
 }
 
 
-@media (min-width: 300px) {
+@media (min-width: 400px) {
     #foo {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -429,7 +429,7 @@ footer {
     }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 700px) {
     #foo {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 3fr;
